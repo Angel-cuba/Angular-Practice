@@ -1,19 +1,5 @@
 <h1>{{title}}</h1>
-<div class="product-container">
-  @for (product of productservice.products(); track product.id) {
-  <div class="product">
-    <p>
-      {{ product.title}}
-    </p>
-    <span>
-      {{product.description}}
-    </span>
-    <img [src]='product.images[0]'  alt="" width="200" height="150">
-    <span>$ {{ product.price }}</span>
-    <div class="category">
-      <p> {{ product.category.name }}</p>
-      <img [src]='product.category.image' alt="" width="60" height="60">
-    </div>
-  </div>
-  }
-</div>Turku
+
+
+    <a href="/products">Products</a>
+    <a href="/details">Details</a>
