@@ -1,6 +1,6 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, delay } from 'rxjs';
+import { delay } from 'rxjs';
 import { Product } from '../model/produc.model';
 
 interface State {
