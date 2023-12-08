@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<ng-container class="">
+  @for (product of productservice.products(); track product.id) {
+    <p>
+      {{ product.title}}
+    </p>
+    <span>
+      {{product.description}}
+    </span>
+    <img src={{product.images[0]}} alt="" width="200" height="150">
+  }
+</ng-container>
