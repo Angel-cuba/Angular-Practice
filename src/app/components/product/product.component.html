@@ -1,12 +1,14 @@
 <h1>{{title}}</h1>
-<ng-container class="">
+<div    class="product-container">
   @for (product of productservice.products(); track product.id) {
-    <p>
+   <div class="product">
+     <p>
       {{ product.title}}
     </p>
     <span>
       {{product.description}}
     </span>
     <img src={{product.images[0]}} alt="" width="200" height="150">
+   </div>
   }
-</ng-container>
+</div>

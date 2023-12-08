@@ -6,8 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgOptimizedImage } from '@angular/common';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), importProvidersFrom(
-    HttpClientModule,
-    NgOptimizedImage
-  )],
+  providers: [
+    provideRouter(routes),
+    importProvidersFrom(HttpClientModule, NgOptimizedImage),
+  ],
 };
